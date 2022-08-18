@@ -7,13 +7,13 @@ const bodyParser = require('body-parser');
 
 app.use(bodyParser.json());
 
-const driverRoutes = require('./routes/drivers');
-
-app.use('/drivers', driverRoutes);
-
 const teamRoutes = require('./routes/teams');
 
 app.use('/teams', teamRoutes);
+
+const driverRoutes = require('./routes/drivers');
+
+app.use('/drivers', driverRoutes);
 
 app.get('/greeting', (req, res) => res.send("Welcome to Fred's Formula 1 Driver API!"));
 

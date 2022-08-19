@@ -44,5 +44,4 @@ const teamSchema = new Schema({
 const Driver = mongoose.model('driver', driverSchema);
 const Team = mongoose.model('team', teamSchema);
 
-module.exports.team = Team;
-module.exports.driver = Driver;
+module.exports = { Team, Driver };

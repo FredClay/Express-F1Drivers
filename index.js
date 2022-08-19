@@ -33,3 +33,5 @@ app.use((err, req, res, next) => {
 const server = app.listen(4494, () => {
   console.log(`Started server on port No. ${server.address().port}`);
 });
+
+module.exports = server;
